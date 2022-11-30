@@ -16,7 +16,7 @@ body {
   font-size: 62.5%;
   font-family: "Hair-2", arial;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .main-title {
-  height: 90vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
