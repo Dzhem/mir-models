@@ -15,8 +15,55 @@
 body {
   font-size: 62.5%;
   font-family: "Hair-2", arial;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
-p {
-  font-size: 2rem;
+.background-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -100;
+  overflow: hidden;
+}
+
+.background-video video {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background-video .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.main-title {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+  letter-spacing: 2px;
+}
+
+.site-title {
+  text-transform: uppercase;
+  font-size: calc(6.5rem + 5vw);
+}
+
+.site-subtitle {
+  font-size: calc(2.5rem + 3vw);
 }
