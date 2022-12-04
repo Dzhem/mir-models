@@ -102,6 +102,10 @@ nav[role="navigation"] {
   letter-spacing: 2px;
 }
 
+.menu__link:hover {
+  border-bottom: 2px solid var(--text-color);
+}
+
 .menu-btn {
   background-color: transparent;
   border: 3px solid var(--text-color);
@@ -144,6 +148,22 @@ nav[role="navigation"] {
 
 @media (min-width: 1024px) {
   nav[role="navigation"] {
-    top: 14%;
+    position: relative;
+    left: 0;
+    top: 0;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    margin: 0 auto;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    gap: 3rem;
   }
 }
