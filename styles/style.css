@@ -17,8 +17,18 @@ body {
   font-size: 62.5%;
   font-family: "Hair-2", arial;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+}
+
+.index-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .background-video {
@@ -72,6 +82,7 @@ body {
   align-items: center;
   color: var(--text-color);
   letter-spacing: 2px;
+  flex-grow: 1;
 }
 
 .site-title {
@@ -85,13 +96,22 @@ body {
 
 nav[role="navigation"] {
   position: fixed;
-  left: 5%;
-  top: 10%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .menu {
   list-style: none;
   display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: rgba(5, 5, 5, 0.9);
 }
 
 .menu__link {
@@ -136,14 +156,8 @@ nav[role="navigation"] {
   transform: rotate(-45deg) translate(4px, -4px);
 }
 
-.show {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  nav[role="navigation"] {
-    top: 12%;
-  }
+.show-menu {
+  display: flex;
 }
 
 @media (min-width: 1024px) {
@@ -152,8 +166,7 @@ nav[role="navigation"] {
     left: 0;
     top: 0;
     max-width: 1440px;
-    display: flex;
-    justify-content: center;
+    height: auto;
     padding-top: 3%;
     margin: 0 auto;
   }
@@ -165,5 +178,8 @@ nav[role="navigation"] {
   .menu {
     display: flex;
     gap: 3rem;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: transparent;
   }
 }

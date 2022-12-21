@@ -4,5 +4,5 @@ document
 
 function handleMenuBtnClick(e) {
   this.classList.toggle("active");
-  document.querySelector(".menu").classList.toggle("show");
+  document.querySelector(".menu").classList.toggle("show-menu");
 }
