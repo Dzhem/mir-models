@@ -31,6 +31,12 @@ body {
   align-items: center;
 }
 
+.wrapper {
+  background-color: #ccc;
+  min-height: 100vh;
+  padding: 0 80px 50px;
+}
+
 .background-video {
   position: absolute;
   width: 100%;
@@ -85,12 +91,24 @@ body {
   flex-grow: 1;
 }
 
-.site-title {
+.site-title,
+.section-title {
   text-transform: uppercase;
   font-size: calc(6.5rem + 5vw);
 }
 
-.site-subtitle {
+.section-title,
+.section-subtitle {
+  text-align: center;
+  font-size: calc(2.5rem + 5vw);
+}
+
+.section-title {
+  margin-bottom: 25px;
+}
+
+.site-subtitle,
+.section-subtitle {
   font-size: calc(2.5rem + 3vw);
 }
 
@@ -182,4 +200,43 @@ nav[role="navigation"] {
     align-items: flex-start;
     background-color: transparent;
   }
+}
+
+.teachers {
+  padding-top: 50px;
+}
+
+.teacher {
+  display: flex;
+}
+
+.teacher:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.teacher__photo {
+  width: 180px;
+  height: 270px;
+  min-width: 180px;
+  min-height: 270px;
+}
+
+.teacher__photo img {
+  width: 100%;
+  height: auto;
+}
+
+.teacher__info {
+  padding-left: 40px;
+}
+
+.teacher__name {
+  font-size: 4rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.teacher__desc {
+  font-size: 2.6rem;
+  font-weight: 700;
 }
