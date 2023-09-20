@@ -19,6 +19,7 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  background-color: #ccc;
 }
 
 .index-wrapper {
@@ -32,9 +33,10 @@ body {
 }
 
 .wrapper {
-  background-color: #ccc;
   min-height: 100vh;
-  padding: 0 80px 50px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 50px;
 }
 
 .background-video {
@@ -208,6 +210,8 @@ nav[role="navigation"] {
 
 .teacher {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .teacher:not(:last-child) {
@@ -227,16 +231,18 @@ nav[role="navigation"] {
 }
 
 .teacher__info {
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 .teacher__name {
   font-size: 4rem;
   margin-bottom: 18px;
   font-weight: 700;
+  text-align: center;
 }
 
 .teacher__desc {
   font-size: 2.6rem;
   font-weight: 700;
+  letter-spacing: 0.08em;
 }
