@@ -214,6 +214,14 @@ nav[role="navigation"] {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .teacher {
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 20px;
+  }
+}
+
 .teacher:not(:last-child) {
   margin-bottom: 50px;
 }
@@ -231,7 +239,7 @@ nav[role="navigation"] {
 }
 
 .teacher__info {
-  /* padding-left: 40px; */
+  flex-grow: 2;
 }
 
 .teacher__name {
@@ -241,8 +249,20 @@ nav[role="navigation"] {
   text-align: center;
 }
 
+@media (min-width: 2560px) {
+  .teacher__name {
+    font-size: 6rem;
+  }
+}
+
 .teacher__desc {
   font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+}
+
+@media (min-width: 2560px) {
+  .teacher__desc {
+    font-size: 3.6rem;
+  }
 }
