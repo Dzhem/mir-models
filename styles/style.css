@@ -289,10 +289,22 @@ nav[role="navigation"] {
 }
 
 .models__wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .models__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .models__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .model {
